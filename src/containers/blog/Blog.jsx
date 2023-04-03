@@ -1,0 +1,50 @@
+import React from 'react';
+import { Article } from '../../components/article/Article';
+import { blog01, blog02, blog03, blog04, blog05 } from './imports';
+import './blog.css';
+
+const Blog = () => (
+  <section
+    className="gpt4__blog section__padding"
+    id="blog"
+  >
+    <header className="gpt4__blog-heading">
+      <h1 className="gradient__text">
+        A lot is happening, <br /> We are blogging about it.
+      </h1>
+    </header>
+    <main className="gpt4__blog-container">
+      <section className="gpt4__blog-container_groupA">
+        <Article
+          imgUrl={blog01}
+          date="Sep 26, 2021"
+          text="GPT-4 and Open AI is the future. Let us exlore how it is?"
+        />
+      </section>
+      <section className="gpt4__blog-container_groupB">
+        <Article
+          imgUrl={blog02}
+          date="Sep 26, 2021"
+          text="GPT-4 and Open AI is the future. Let us exlore how it is?"
+        />
+        <Article
+          imgUrl={blog03}
+          date="Sep 26, 2021"
+          text="GPT-4 and Open AI is the future. Let us exlore how it is?"
+        />
+        <Article
+          imgUrl={blog04}
+          date="Sep 26, 2021"
+          text="GPT-4 and Open AI is the future. Let us exlore how it is?"
+        />
+        <Article
+          imgUrl={blog05}
+          date="Sep 26, 2021"
+          text="GPT-4 and Open AI is the future. Let us exlore how it is?"
+        />
+      </section>
+    </main>
+  </section>
+);
+
+export default Blog;
